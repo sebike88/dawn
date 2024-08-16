@@ -20,6 +20,28 @@
   }
 {%- endstyle -%}
 
+<div>
+  <div class="section-{{ section.id }}-padding">
+    <h2>{{ 'sections.quick-order-list.title' | t }}</h2>
+  </div>
+
+  <div class="quick-order-list">
+    <div class="quick-order-list__header">
+      <div class="quick-order-list__header-item">
+        <span>{{ 'sections.quick-order-list.product' | t }}</span>
+      </div>
+      <div class="quick-order-list__header-item">
+        <span>{{ 'sections.quick-order-list.price' | t }}</span>
+      </div>
+      <div class="quick-order-list__header-item">
+        <span>{{ 'sections.quick-order-list.quantity' | t }}</span>
+      </div>
+      <div class="quick-order-list__header-item">
+        <span>{{ 'sections.quick-order-list.total' | t }}</span>
+      </div>
+    </div>
+</div>
+
 {% render 'quick-order-list',
   product: product,
   show_image: section.settings.show_image,
